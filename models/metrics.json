@@ -1,0 +1,14 @@
+{
+  "rows_used": 19675,
+  "rows_excluded_capped": 965,
+  "random_split_test": {
+    "mae_usd": 26903,
+    "mape": 0.1439,
+    "r2": 0.8233
+  },
+  "spatial_holdout_5fold": {
+    "mae_usd": 38927,
+    "mape": 0.221,
+    "r2": 0.6746
+  }
+}

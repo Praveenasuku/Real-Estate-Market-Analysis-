@@ -1,0 +1,87 @@
+{
+  "market": {
+    "districts": 20640,
+    "median_value": 179700.0,
+    "median_income_usd": 35348.0,
+    "median_price_to_income": 4.95,
+    "share_value_capped": 0.0468
+  },
+  "premium_same_income": {
+    "INLAND": 0.0,
+    "<1H OCEAN": 0.597,
+    "NEAR OCEAN": 0.805,
+    "NEAR BAY": 0.75
+  },
+  "affordability": {
+    "San Francisco": {
+      "median_value": 235600.0,
+      "median_income_usd": 38667.0,
+      "price_to_income": 5.76
+    },
+    "Los Angeles": {
+      "median_value": 193000.0,
+      "median_income_usd": 36413.0,
+      "price_to_income": 5.26
+    },
+    "San Diego": {
+      "median_value": 159100.0,
+      "median_income_usd": 33371.0,
+      "price_to_income": 4.72
+    },
+    "San Jose": {
+      "median_value": 184950.0,
+      "median_income_usd": 36303.0,
+      "price_to_income": 4.67
+    },
+    "Sacramento": {
+      "median_value": 108300.0,
+      "median_income_usd": 28348.0,
+      "price_to_income": 3.74
+    }
+  },
+  "segments": {
+    "Premium urban": {
+      "districts": 6881,
+      "median_value": 279900.0,
+      "median_income_usd": 45096.0,
+      "median_dist_km": 21.1,
+      "median_age": 35.0
+    },
+    "Mid-market suburban": {
+      "districts": 4296,
+      "median_value": 204950.0,
+      "median_income_usd": 46618.0,
+      "median_dist_km": 53.5,
+      "median_age": 14.0
+    },
+    "Mid-market urban": {
+      "districts": 4755,
+      "median_value": 150300.0,
+      "median_income_usd": 26384.0,
+      "median_dist_km": 14.6,
+      "median_age": 35.0
+    },
+    "Affordable rural": {
+      "districts": 4708,
+      "median_value": 91250.0,
+      "median_income_usd": 24653.0,
+      "median_dist_km": 130.4,
+      "median_age": 26.0
+    }
+  },
+  "model": {
+    "rows_used": 19675,
+    "rows_excluded_capped": 965,
+    "random_split_test": {
+      "mae_usd": 26903,
+      "mape": 0.1439,
+      "r2": 0.8233
+    },
+    "spatial_holdout_5fold": {
+      "mae_usd": 38927,
+      "mape": 0.221,
+      "r2": 0.6746
+    }
+  },
+  "priced_below_model_count": 479
+}
